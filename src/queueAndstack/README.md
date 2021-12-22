@@ -21,5 +21,12 @@
   - [원형규 구현_2](/queueAndstack/CircularQueue2.java): front 인덱스 포인터, 입력/추출시 count 개수로 rear 포인터 대체
   - 정적 배열에서 front와 rear 인덱스 값을 이용해 구현
   - (rear + 1) % size 를 하여 배열의 인덱스를 초과하지 않고 정적 배열을 순회 할 수 있도록 구현
+
+- 큐 활용 문제
+  - [leetCode 346](/queueAndstack/LeetCode346.java) (easy)
   
+- 큐를 이용한 BFS 구현
+  - [BFS 기본 구현](/BFS/Bfs.java)
+  - [LeetCode286](/BFS/LeetCode286.java)
+  - [LeetCode200](/BFS/LeetCode200.java)
 # Stack
