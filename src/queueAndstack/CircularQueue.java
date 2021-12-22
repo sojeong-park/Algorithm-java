@@ -1,8 +1,5 @@
 package queueAndstack;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * LeetCode 622. Design Circular Queue Medium
  *  * Your MyCircularQueue object will be instantiated and called as such:
@@ -32,10 +29,10 @@ public class CircularQueue {
             return false;
         }
         if (isEmpty()) {
-            rear = 0;
+            front = 0;
         }
-        queue[rear] = value;
         rear = (rear + 1) % size;
+        queue[rear] = value;
         return true;
     }
 
