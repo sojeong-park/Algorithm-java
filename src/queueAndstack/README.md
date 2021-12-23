@@ -29,4 +29,13 @@
   - [BFS 기본 구현](/BFS/Bfs.java)
   - [LeetCode286](/BFS/LeetCode286.java)
   - [LeetCode200](/BFS/LeetCode200.java)
+  - [LeetCode752](/BFS/LeetCode752.java)
 # Stack
+- Last In First Out : 최신 데이터가 가장 먼저 나온다.
+  - Push: 스택의 마지막에 새로운 요소 추가
+  - Pop: 스택의 마지막 요소를 출력
+  
+- [스택 구현](/queueAndstack/MyStack.java)
+
+- 스택 활용 문제
+  - [LeetCode155](/queueAndstack/LeetCode155.java) : 스택의 기능(FIFO, push, pop)을 유지하면서 스택 내에서 가장 작은 값을 구해보자
