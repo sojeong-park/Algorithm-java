@@ -38,4 +38,6 @@
 - [스택 구현](/queueAndstack/MyStack.java)
 
 - 스택 활용 문제
-  - [LeetCode155](/queueAndstack/LeetCode155.java) : 스택의 기능(FIFO, push, pop)을 유지하면서 스택 내에서 가장 작은 값을 구해보자
+  - [LeetCode155](/queueAndstack/LeetCode155.java)(easy) : 스택의 기능(FIFO, push, pop)을 유지하면서 스택 내에서 가장 작은 값을 구해보자
+  - [LeetCode20](/queueAndstack/LeetCode20.java)(easy) : 올바른 괄호쌍인지 판별하는 문제
+  - [LeetCode150](/queueAndstack/LeetCode150.java)(Medium) : 계산기 문제
