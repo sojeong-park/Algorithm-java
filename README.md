@@ -34,3 +34,6 @@ Solving algorithm problems with java language.
 
 # DP
    - [LeetCode_55](/src/arraysAndStrings/LeetCode55.java)
+
+# Recursion
+   - [백준 N과 M (1)](/src/recursion/n과m1.java)
