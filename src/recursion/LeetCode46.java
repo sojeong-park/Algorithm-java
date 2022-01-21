@@ -3,8 +3,12 @@ package recursion;
 import java.util.*;
 
 public class LeetCode46 {
+    private static List<List<Integer>> resultList = new ArrayList<>();
+    private static List<Integer> paramList = new ArrayList<>();
+    private static boolean[] visited;
+
     /**
-     * permutation
+     * permutation - Collection swap 풀이
      * */
     public static List<List<Integer>> permute(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
@@ -25,6 +29,31 @@ public class LeetCode46 {
             Collections.swap(nums, first, i);
             recursion(size, nums, result, first + 1);
             Collections.swap(nums, first, i);
+        }
+    }
+
+    /**
+     * permutation  - dfs 풀이
+     * */
+    public static List<List<Integer>> permute2(int[] nums) {
+        visited = new boolean[nums.length];
+        dfs(paramList, nums);
+        return resultList;
+    }
+
+    public static void dfs(List<Integer> paramList, int[] nums) {
+        if (paramList.size() == nums.length) {
+            resultList.add(new ArrayList<>(paramList));
+        }
+
+        for (int i = 0; i < nums.length; i++) {
+            if (!visited[i]) {
+                visited[i] = true;
+                paramList.add(nums[i]);
+                dfs(paramList, nums);
+                visited[i] = false;
+                paramList.remove(paramList.size()-1);
+            }
         }
     }
 
