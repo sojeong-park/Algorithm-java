@@ -7,6 +7,7 @@ Solving algorithm problems with java language.
 2. [Array](#Array)
 3. [LinkedList](#LinkedList)
 4. [DP](#DP)
+5. Binary Search
 
 # String
 1. Sliding window
@@ -21,6 +22,7 @@ Solving algorithm problems with java language.
 3. for loop
    - [LeetCode_929](/src/arraysAndStrings/LeetCode929.java)
    - [LeetCode_66](/src/arraysAndStrings/LeetCode66.java)
+   - [LeetCode696](/src/arraysAndStrings/LeetCode696.java): two pointer 풀이도 가능
    
 # Array
    1. Matrix rotation
@@ -37,3 +39,7 @@ Solving algorithm problems with java language.
 
 # Recursion
    - [백준 N과 M (1)](/src/recursion/n과m1.java)
+
+# Binary Search
+   - [LeetCode4](/src/arraysAndStrings/LeetCode4.java):
+   - [LeetCode704](/src/arraysAndStrings/LeetCode704.java)
