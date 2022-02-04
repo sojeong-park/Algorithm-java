@@ -23,7 +23,8 @@ Solving algorithm problems with java language.
    - [LeetCode_929](/src/arraysAndStrings/LeetCode929.java)
    - [LeetCode_66](/src/arraysAndStrings/LeetCode66.java)
    - [LeetCode696](/src/arraysAndStrings/LeetCode696.java): two pointer 풀이도 가능
-   
+   - [LeetCode13](/src/arraysAndStrings/LeetCode13.java)
+    
 # Array
    1. Matrix rotation
       - [LeetCode_48](/src/arraysAndStrings/LeetCode48.java)
