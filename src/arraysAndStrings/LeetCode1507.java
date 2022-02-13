@@ -44,7 +44,7 @@ public class LeetCode1507 {
         sb.append(day);
         return sb.toString();
     }
-    
+
     public static void main(String[] args) {
         System.out.println(reformatDate("5th Jan 2052"));
         System.out.println(reformatDate("5th Jan 2052"));
