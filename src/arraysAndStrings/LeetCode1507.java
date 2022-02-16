@@ -45,6 +45,27 @@ public class LeetCode1507 {
         return sb.toString();
     }
 
+    /**
+     * 정규식보다 쉬운 풀이
+     * 정규식 풀이는 평균 5ms시간이 걸린다면 이 풀이는 1ms 시간이 소요됨.
+     * */
+    public static String reformatDate3(String date) {
+        String[] strs = date.split(" ");
+        StringBuilder sb = new StringBuilder();
+        sb.append(strs[2]).append("-");
+        sb.append(month.get(strs[1])).append("-");
+
+        String day = "";
+        if (strs[0].length() == 3) {
+            day = strs[0].substring(0, 1);
+            sb.append(0).append(day);
+        } else {
+            day = strs[0].substring(0, 2);
+            sb.append(day);
+        }
+
+        return sb.toString();
+    }
     public static void main(String[] args) {
         System.out.println(reformatDate("5th Jan 2052"));
         System.out.println(reformatDate("5th Jan 2052"));
