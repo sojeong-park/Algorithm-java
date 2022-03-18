@@ -1,4 +1,4 @@
-package Kakao2021;
+package Kakao;
 
 /**
  * https://programmers.co.kr/learn/courses/30/lessons/72410

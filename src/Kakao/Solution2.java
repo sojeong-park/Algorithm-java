@@ -1,4 +1,4 @@
-package Kakao2021;
+package Kakao;
 
 import java.util.*;
 
