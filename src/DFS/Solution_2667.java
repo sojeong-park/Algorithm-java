@@ -25,6 +25,7 @@ public class Solution_2667 {
     static int[] dy = {0, 1, 0, -1};
     static int[][] arr;
     static boolean[][] visited;
+    static List<Integer> ans = new ArrayList<>();
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -40,12 +41,11 @@ public class Solution_2667 {
             }
         }
 
-        int cnt = 1;
-        List<Integer> ans = new ArrayList<>();
+        int cnt = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (!visited[i][j] && arr[i][j] == 1) {
-                    ans.add(bfs(cnt, new Pair(i, j), n));
+                    bfs(i, j, n);
                     cnt++;
                 }
             }
@@ -53,35 +53,35 @@ public class Solution_2667 {
 
         Collections.sort(ans);
         System.out.println(cnt);
-        for (int a : ans){
-            System.out.println(a);
+        for (int i = 0; i < ans.size(); i++){
+            System.out.println(ans.get(i));
         }
     }
 
-    static int bfs(int danji, Pair pair, int n) {
+    static void bfs(int x, int y, int n) {
         Queue<Pair> queue = new LinkedList<>();
-        queue.add(pair);
-        int cnt = 0;
+        queue.add(new Pair(x, y));
+        visited[x][y] = true;
+        int cnt = 1;
         while (!queue.isEmpty()) {
-            Pair pair1 = queue.poll();
-            int x = pair1.x;
-            int y = pair1.y;
+            Pair pair = queue.poll();
+            int nx = pair.x;
+            int ny = pair.y;
 
             // 4가지 방향 탐색
             for (int i = 0; i < 4; i++) {
-                int kx = x + dx[i];
-                int ky = y + dy[i];
+                int kx = nx + dx[i];
+                int ky = ny + dy[i];
 
                 if (kx >= 0 && kx < n && ky >= 0 && ky < n) {
                     if (!visited[kx][ky] && arr[kx][ky] == 1) {
                         visited[kx][ky] = true;
-                        arr[kx][ky] = danji;
                         queue.offer(new Pair(kx, ky));
                         cnt++;
                     }
                 }
             }
         }
-        return cnt;
+        ans.add(cnt);
     }
 }
