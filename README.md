@@ -44,3 +44,20 @@ Solving algorithm problems with java language.
 # Binary Search
    - [LeetCode4](/src/arraysAndStrings/LeetCode4.java):
    - [LeetCode704](/src/arraysAndStrings/LeetCode704.java)
+
+# Graph 탐색
+  1. 그래프 구현하기
+     - [인접행렬](src/DFS/AdjacencyMatrix.java)
+     - [인접리스트](src/DFS/AdjacencyList.java)
+       
+       |    |특징|공간복잡도|
+       |------|---|---|
+       |인접 행렬|간선이 많이 존재하는 밀집 그래프<br> 인접 노드를 찾기 위해선 모든 노드를 순회<br>V개의 노드 표현위해 V^2만큼의 공간 필요|O(v^2)|
+       |인접 리스트|간선이 적게 존재하는 희소 그래프<br> 인접 노드를 쉽게 찾을 수 있음<br>V개의 리스트에 간선(E) 만큼 원소가 들어있음|O(V+E)|
+
+  2. DFS, BFS 구현하기
+     - [DFS 풀이](/src/DFS/Dfs.java)
+     - [BFS 풀이](/src/BFS/Bfs.java)
+  3. DFS, BFS 활용하기
+     - [연결요소의개수](/src/DFS/Solution_11724.java): 연결된 그래프의 개수 count
+    
